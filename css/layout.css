@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+body {
+	overflow: hidden;
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+header {
+	width: 275px;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.logo-wrap {
+	margin: 0px auto 25px auto;
+	width: 198px;
+	padding-top: 50px;
+}
+nav {
+	margin: 0 auto 35px auto;
+	width: 175px;
+}
+ul {
+	list-style-type: none;
+}
+li a {
+	display: block;
+	color: #fff;
+	padding: 8px 0 8px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	color: silver;
+}
+.info-wrap {
+	width: 175px;
+	margin: 0 auto 60px auto;
+}
+#menu-content1 {
+	width: 37%;
+	height: 575px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 100px 0 100px 25%;
+}
+#menu-content2 {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	padding: 15px;
+}
+#content {
+	width: 37%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 100px 0 100px 25%;
+	padding: 25px;
+}
+.location {
+	width: 37%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 20px 0 20px 25%;
+	padding: 25px;	
+}
+#about-content {
+	width: 37%;
+	height: 300px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 0 25%;
+	padding: 25px;
+	top: 25%;
+}
+.sub-nav {
+	width: 100%;
+	margin: 5px auto 5px auto;
+}
+.sub-menu {
+	float: left;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+.price {
+	position: relative;
+	float: right;
+}
+input {
+	margin-bottom: 15px;
+}
+select {
+	margin-bottom: 15px;
+}
+.headline {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translateY(-40%, -40%);
+	padding: 15px;
+}
+
+/* Put in style.css */
+.special-header {
+	margin: 0 auto;
+}
+#mobile-nav {
+	display: none;
+}
+
+/* Media Queries
+===================================*/
+@media screen and (max-width: 480px) {
+	header {
+		display: none;
+	}
+	.home-bg {
+		background-image: url(../images/mobile-italy.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-color: #232323;
+	}
+	.headline {
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: 40%;
+		left: 50%;
+		margin-left: -50%;
+		padding: 5px;
+	}
+	.fnt {
+		font-size: 36px;
+	}
+	.sub-fnt {
+		font-size: 20px;
+	}
+	#mobile-nav {
+		display: inline;
+		float: right;
+		padding: 5px;
+		background-color: silver;
+	}
+	#mobile-nav:hover {
+		background-color: #232323;
+	}
+	.menu-bg {
+		background-color: #232323;
+	}
+	.about-bg {
+		background-image: url(../images/mobile-about.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-color: #232323;		
+	}
+	#about-content {
+		position: absolute;
+		width: 100%;
+		top: 30%;
+		left: 50%;
+		margin-left: -50%;
+		padding: 25px;		
+	}
+	.location {
+		display: none;
+	}
+	.map-responsive {
+		position: absolute;
+		width: 100%;
+		top: 30%;
+		left: 50%;
+		margin-left: -50%;
+	}	
+	.reservations-bg {
+		background-image: url(../images/mobile-pasta.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-color: #232323;			
+	}
+	#content {
+		position: absolute;
+		width: 100%;
+		top: 20%;
+		left: 50%;
+		margin-left: -50%;
+		padding: 25px;
+	}
+	.location-bg {
+		background-image: url(../images/mobile-location.jpe);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-color: #232323;		
+	}
+	#menu-content {
+	width: 60%;
+	height: 575px;
+	position: relative;
+	float: left;
+	overflow: scroll;
+	margin: 100px 0 100px 25%;
+	padding: 15px;
+}
+}

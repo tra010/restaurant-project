@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+
+/* Reset
+==================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; 
+}
+body {
+	line-height: 1em; 
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+/* Basic Styles 
+==================================*/
+body {
+	font: 14px 'source sans pro', Helvetica, Arial, Courier, Verdana, Serif;
+	/* color: #232323; */
+	-webkit-text-size-adjust: 100%;
+	color:#f8f8f8;
+}
+
+/* Typography
+===================================*/
+@import url(https://fonts.googleapis.com/css?family=Italiana|Italianno|Lora);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro|Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'crimson text', 'italiana', 'Lora', Arial, Courier, Sans Serif;
+	color: silver;
+	text-decoration: none !important;
+}
+h1 {
+	font-size: 36px;
+	line-height: 1.1em;
+	margin-bottom: 25px;
+}
+h2 {
+	font-size: 28px;
+	line-height: 1.1em;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 24px;
+	line-height: 1.1em;
+	margin-bottom: 8px;
+}
+h4 {
+	font-size: 20px;
+	line-height: 1.1em;
+	margin-bottom: 4px;
+}
+h5 {
+	font-size: 16px;
+	line-height: 1.1em;
+}
+h6 {
+	font-size: 14px;
+	line-height: 1.1em;
+}
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+	margin-top: 1.5em;
+}
+p img {
+	margin: 0;
+}
+em {
+	font-style: italic;
+}
+strong, b {
+	font-weight: bold;
+}
+small {
+	font-size: 80%;
+}
+/* Links
+====================================*/
+li, a {
+	font-family: 'crimson text', serif;
+	font-size: 22px;
+} 
+/* Backgrounds
+====================================*/
+.home-bg {
+	background-image: url(../images/italy.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #232323;
+}
+.lunch-bg {
+	background-image: url(../images/lunch1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #232323;
+}
+.dinner-bg {
+	background-image: url(../images/dinner.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #232323;
+}
+.reservations-bg {
+	background-image: url(../images/pasta.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #232323;
+}
+.location-bg {
+	background-image: url(../images/location.jpe);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #232323;
+}
+.about-bg {
+	background-image: url(../images/about.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #232323;
+}
+header {
+	background-color: rgba(0,0,0,0.7);
+}
+#menu-content1 {
+	background-color: rgba(0,0,0,0.7);
+}
+#content {
+	background-color: rgba(0,0,0,0.7);
+}
+#about-content {
+	background-color: rgba(0,0,0,0.7);
+}
+.location {
+	background-color: rgba(0,0,0,0.7);
+}
+.center {
+	text-align: center;
+}
+.hours {
+	color:#fff;
+	padding-bottom: 25px;
+}
+.title {
+	padding: 50px 0 25px 0;
+	color: #848482;
+}
+.headline {
+	background-color: rgba(0,0,0,0.7);
+}
+.fnt {
+	font-family: 'raleway';
+	font-size: 76px;
+}
+.sub-fnt {
+	font-family: 'source sans pro',;
+	font-size: 36px;
+}
+.text {
+	color: silver;
+}
+
+/* responsive map
+======================================*/
+.map-responsive {
+	padding-bottom: 56.25%;
+	position: relative;
+	width: 100%;
+}
+
+/* Sub Menu Styling 
+===============================*/
+#main, #drink, #desert {
+	display: none;
+}
+
+/* Custon CSS
+===============================*/
+.special-header {
+	color: #848482;
+	margin-bottom: 15px;
+}
+.logo {
+	color: silver;
+	font-family: 'Italianno', serif;
+	font-size: 66px;
+	text-align: center;
+}
+a, .logo {
+	text-decoration: none;
+}
+
+/* Form Styling
+========================================*/
+input, select {
+	background-color: #fff;
+	border: 2px solid #000;
+}
+.active {
+	font-weight: bold;
+	color: #848482;
+}

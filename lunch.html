@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Layout of Elegance</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+</head>
+<body class="lunch-bg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn-app").click(function() {
+			$("#btn-app").css('color', '#848482');
+			$("#btn-drink").css('color', '#f8f8f8');
+			$("#btn-desert").css('color', '#f8f8f8');
+			$("#btn-main").css('color', '#f8f8f8');
+			$("#drink").hide();
+			$("#main").hide();
+			$("#desert").hide();
+			$("#app").show();
+		});
+		
+		$("#btn-main").click(function() {
+			$("#main").show();
+			$("#btn-main").css('color', '#848482');
+			$("#btn-drink").css('color', '#f8f8f8');
+			$("#btn-desert").css('color', '#f8f8f8');
+			$("#btn-app").css('color', '#f8f8f8');
+			$("#app").hide();
+			$("#desert").hide();
+			$("#drink").hide();
+		});
+		
+		$("#btn-desert").click(function() {
+			$("#btn-desert").css('color', '#848482');
+			$("#btn-drink").css('color', '#f8f8f8');
+			$("#btn-main").css('color', '#f8f8f8');
+			$("#btn-app").css('color', '#f8f8f8');
+			$("#desert").show();
+			$("#app").hide();
+			$("#drink").hide();
+			$("#main").hide();
+		});
+		
+		$("#btn-drink").click(function() {
+			$("#btn-drink").css('color', '#848482');
+			$("#btn-desert").css('color', '#f8f8f8');
+			$("#btn-main").css('color', '#f8f8f8');
+			$("#btn-app").css('color', '#f8f8f8');
+			$("#drink").show();
+			$("#desert").hide();
+			$("#app").hide();
+			$("#main").hide();
+		});
+	});
+	
+	</script>
+	<section id="wrapper">
+		<a id="mobile-nav" href="menu.html">
+			<img src="images/hamburger-menu.svg" width="60px" height="60px" />
+		</a>	
+		<header>
+			<div class="logo-wrap">
+				<a href="index.html"><h1 class="logo">Elegance</h1></a>
+			</div>
+			<nav>
+				<div class="center">
+				<ul>
+					<li class="current-menu-item"><a href="about.html">About</a></li>
+					<li><a class="active" href="lunch.html">Lunch</a></li>
+					<li><a href="dinner.html">Dinner</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="location.html">Location</a></li>
+				</ul>
+				</div>
+			</nav>
+			<div class="info-wrap center">
+				<h4 class="special-header" align="center">Hours</h4>
+				<br />
+					<p>Monday - Thursday</p>
+					<p>Noon to 10:00pm</p>
+					<br />
+					<p>Friday - Saturday</p>
+					<p>Noon to 12:00am</p>
+					<br />
+					<p>Sundays</p>
+					<p>10:00am - 9:00pm</p>
+					<br />
+				<h4 class="special-header" align="center">Address</h4>
+				<br />
+				<p>2295 Palos Verdes Drive</p>
+				<p>Rancho Palos Verdes, CA 90275</p>
+			</div>
+		</header>
+		<div id="menu-content1">
+		<div id="menu-content2">
+			<div class="sub-nav">
+				<ul id="navigation">
+					<li class="sub-menu"><a id="btn-app" href="#">Appetizers</a></li>
+					<li class="sub-menu"><a id="btn-main" href="#">Main Course</a></li>
+					<li class="sub-menu"><a id="btn-desert" href="#">Desert</a></li>
+					<li class="sub-menu"><a id="btn-drink" href="#">Drinks/Cocktails</a></li>
+				</ul>
+				<div id="app">
+					<h4>Caprese</h4>
+					<p>mozarella, cluster tomatoes, EVOO, basil<span class="price">12.95</span></p>
+					<h4>Crudo</h4>
+					<p>proscuitto di parma<span class="price">12.95</span></p>
+					<h4>Emilia Salad</h4>
+					<p>grilled vegtables, parmigiano reggiano w/balsamic vinigar<span class="price">9.50</span></p>
+					<h4>Crudo e Formaggio</h4>
+					<p>proscuitto di parma w/fresh mozarella cheese<span class="price">14.95</span></p>
+					<h4>Crudo e Burreta</h4>
+					<p>proscuitto di parma w/burreta cheese<span class="price">12.95</span></p>
+				</div>
+				<div id="main">
+					<h4>Primavera</h4>
+					<p>cream, parmesan cheese, herbs, broccoli & mushrooms<span class="price">13.25</span></p>
+					<h4>Shrimp Scampi</h4>
+					<p>herbs, EVOO, garlic, herbs<span class="price">15.99</span></p>
+					<h4>Chicken Alfredo</h4>
+					<p>chicken, butter, heavy cream & romano cheese<span class="price">12.25</span></p>
+					<h4>Stuffed Shells</h4>
+					<p>fresh tomato sauce, proscuitto di parma, mozzarella cheese<span class="price">12.00</span></p>
+					<h4>Eggpant Parmesan</h4>
+					<p>fresh eggplant, spaghetti, sauce & mozzarella cheese<span class="price">12.50</span></p>
+					<h4>Lasagna</h4>
+					<p>pasta, meat, fresh sauce & mozarella cheese<span class="price">12.00</span></p>
+					<h4>Chicken Parmesan</h4>
+					<p>chicken, parmigiano reggiano, tomato sauce, mozarella<span class="price">13.00</span></p>
+				</div>
+				<div id="desert">
+					<h4>Tiramisu</h4>
+					<p><span class="price">6.00</span></p>
+					<h4>House Cake</h4>
+					<p><span class="price">6.00</span></p>
+					<h4>Cannellino</h4>
+					<p><span class="price">3.25</span></p>
+					<h4>Crostata</h4>
+					<p><span class="price">4.00</span></p>
+					<h4>Gelato</h4>
+					<p><span class="price">6.00</span></p>
+				</div>
+				<div id="drink">
+					<h4>Draft Sodas</h4>
+					<p>coke, diet coke, lemonade, sprite, fanta orange<span class="price">2.25</span></p>
+					<h4>Espresso</h4>
+					<p><span class="price">1.95</span></p>
+					<h4>Cappuccino</h4>
+					<p><span class="price">2.95</span></p>
+					<h4>Bottle of San Pellegrino</h4>
+					<p>sparkling water<span class="price">3.00</span></p>
+					<h4>Draft Beer</h4>
+					<p>birra moretti, birra moretti la rossa<span class="price">4.50</span></p>
+					<br />
+					<h4>Wine List</h4>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
